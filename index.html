@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zeyy Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="background"></div>
+
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-store"></i>
+        <span>Zeyy Store</span>
+    </div>
+
+     <nav class="navbar">
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#produk"><i class="fa-solid fa-box"></i> Produk</a>
+    <a href="#kategori"><i class="fa-solid fa-layer-group"></i> Kategori</a>
+    <a href="#testimoni"><i class="fa-solid fa-rainbow"></i> Kelebihan</a>
+    <a href="#kontak"><i class="fa-solid fa-phone"></i> Kontak</a>
+</nav>
+
+    <div class="menu">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+<div class="toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Welcome to web produk Zeyy! 😇💫</h1>
+
+<p>
+Tempat terbaik untuk membeli panel, script, apk bug,
+hosting dan produk digital dengan tampilan modern.
+</p>
+
+<div class="hero-btn">
+
+<button id="shopBtn">
+
+Belanja Sekarang
+
+</button>
+
+<button>
+
+Lihat Produk
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://files.catbox.moe/6nucqj.jpg">
+
+</div>
+
+</section>
+
+<section class="search-box">
+
+<input
+type="text"
+placeholder="Cari produk..."
+id="search">
+
+<button>
+
+<i class="fa-solid fa-search"></i>
+
+</button>
+
+</section>
+
+<section id="kategori">
+
+<h2 class="title">
+
+Kategori
+
+</h2>
+
+<div class="kategori">
+
+<div class="box">
+
+<i class="fa-solid fa-server"></i>
+
+<p>Panel</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-bug"></i>
+
+<p>Apk Bug</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-cloud"></i>
+
+<p>Hosting</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-file"></i>
+
+<p>Script</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-"></i>
+
+<p>mbuh</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="produk">
+
+<h2 class="title">
+
+Produk Terbaru
+
+</h2>
+
+<div class="products">
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>Nokos WhatsApp</h3>
+    <p>Indonesia Fresh</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,5000)">
+            Fresh
+            <span>Rp5.000</span>
+        </button>
+
+    </div>
+
+</div>
+
+    <h2 class="harga">Rp5.000</h2>
+
+    <button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>Gojo Crasher</h3>
+    <p>Apk bug, bisa rat (khusus permanen ke atas)</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,2000)">
+            Harian
+            <span>Rp2.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,10500)">
+            Mingguan
+            <span>Rp10.500</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,40000)">
+            Bulanan
+            <span>Rp40.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,50000)">
+            Permanen
+            <span>Rp50.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,65000)">
+            Reseller
+            <span>Rp65.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,95000)">
+            Owner
+            <span>Rp95.000</span>
+        </button>
+
+    </div>
+
+</div>
+
+    <h2 class="harga">Rp2.000</h2>
+
+    <button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>Hollow</h3>
+    <p>Apk bug</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,3000)">
+            Basic 1 hari
+            <span>Rp3.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,5000)">
+            Basic 2 hari
+            <span>Rp5.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,7000)">
+            Basic 3 hari
+            <span>Rp7.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,10000)">
+            Basic 5 hari
+            <span>Rp10.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,13000)">
+            Basic 7 hari
+            <span>Rp13.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,17000)">
+            Basic 14 hari
+            <span>Rp17.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,19000)">
+            Basic 21 hari
+            <span>Rp19.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,20000)">
+            Basic 1 bulan
+            <span>Rp20.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,40000)">
+            Basic permanen
+            <span>Rp40.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,25000)">
+            Vip 1 bulan
+            <span>Rp25.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,50000)">
+            Vip permanen
+            <span>Rp50.000</span>
+        </button>
+
+    </div>
+
+</div>
+
+    <h2 class="harga">Rp3.000</h2>
+
+    <button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>Apocalypse</h3>
+    <p>Apk bug</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,1000)">
+            1 hari
+            <span>Rp1.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,2000)">
+            2 hari
+            <span>Rp2.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,3000)">
+            3 hari
+            <span>Rp3.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,4000)">
+            4 hari
+            <span>Rp4.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,5000)">
+            5 hari
+            <span>Rp5.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,6000)">
+            1 minggu
+            <span>Rp6.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,10000)">
+            1 bulan
+            <span>Rp10.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,20000)">
+            Permanen
+            <span>Rp20.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,45000)">
+            Reseller
+            <span>Rp45.000</span>
+        </button>
+
+    </div>
+
+</div>
+
+    <h2 class="harga">Rp1.000</h2>
+
+    <button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>Manta'x</h3>
+    <p>Apk bug, bisa rat</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,60000)">
+            Permanen
+            <span>Rp60.000</span>
+        </button>
+
+        </div>
+
+</div>
+
+<h2 class="harga">Rp60.000</h2>
+
+<button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>Necrobyte</h3>
+    <p>Apk bug</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,2000)">
+            1 hari
+            <span>Rp2.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,5000)">
+            2 hari
+            <span>Rp5.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,10000)">
+            1 bulan
+            <span>Rp10.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,20000)">
+            Permanen
+            <span>Rp20.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,30000)">
+            Reseller
+            <span>Rp30.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,40000)">
+            Partner
+            <span>Rp40.000</span>
+        </button>
+
+    </div>
+
+</div>
+
+    <h2 class="harga">Rp2.000</h2>
+
+    <button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+<div class="card">
+
+    <img src="https://files.catbox.moe/9k86ty.jpg">
+
+    <h3>X-Crasher</h3>
+    <p>Apk bug</p>
+
+    <div class="paket-box">
+
+    <div class="paket-title">📦 Pilih Paket</div>
+
+    <div class="paket-list">
+
+        <button class="paket-btn active" onclick="pilihPaket(this,2000)">
+            Member harian
+            <span>Rp2.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,20000)">
+            Member bulanan
+            <span>Rp20.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,35000)">
+            Permanen/full up
+            <span>Rp35.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,75000)">
+            Vip
+            <span>Rp75.000</span>
+        </button>
+
+        <button class="paket-btn" onclick="pilihPaket(this,95000)">
+            Reseller
+            <span>Rp95.000</span>
+        </button>
+
+    </div>
+
+</div>
+
+    <h2 class="harga">Rp2.000</h2>
+
+    <button class="buy" onclick="bukaCheckout()">
+    🛒 Beli Sekarang
+</button>
+
+</div>
+
+</section>
+
+<section id="testimoni">
+
+<h2 class="title">
+
+Kelebihan buy di Zeyy 😈😎
+
+</h2>
+
+<div class="testi">
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Pelayanan cepat dan ramah.
+
+</p>
+
+</div>
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Amanah dan terpercaya.
+
+</p>
+
+</div>
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Script sangat bagus.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2 class="title">
+
+Hubungi Kami
+
+</h2>
+
+<div class="contact-buttons">
+    <a href="https://wa.me/6285143226298" target="_blank" class="wa-btn">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a href="https://t.me/zeyywokwok" target="_blank" class="tg-btn">
+        <i class="fa-brands fa-telegram"></i> Telegram
+    </a>
+
+    <a href="https://whatsapp.com/channel/0029VbBv6H9IN9ivqIIUSI1f" target="_blank" class="testi-btn">
+        <i class="fa-solid fa-star"></i> Testimoni
+    </a>
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Zeyy Store
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<div id="checkoutModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Pilih Metode Checkout</h2>
+
+        <a href="https://wa.me/6285143226298" target="_blank" class="wa-btn">
+            WhatsApp
+        </a>
+
+        <a href="https://t.me/zeyywokwok" target="_blank" class="tele-btn">
+            Telegram
+        </a>
+
+        <button class="close-btn" onclick="tutupCheckout()">
+            Tutup
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
